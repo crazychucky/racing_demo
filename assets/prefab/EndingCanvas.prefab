@@ -130,7 +130,7 @@
     "_priority": 1073741824,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 449.1139240506329,
+    "_orthoHeight": 320,
     "_near": 1,
     "_far": 2000,
     "_color": {
@@ -248,7 +248,7 @@
     "fileId": "caNNtBINJLI5tYhiK/byNI"
   },
   {
-    "__type__": "6b38euywuVMfbZYge3CUE7X",
+    "__type__": "83b2bWoQtFLgpyMciEjr5R3",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -263,7 +263,7 @@
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "c6HM9kMopFVrAjeNbYtwON"
+    "fileId": "70cILaK0FPI4uaAPJqS09W"
   },
   {
     "__type__": "cc.PrefabInfo",
