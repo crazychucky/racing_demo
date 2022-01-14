@@ -1,3 +1,16 @@
 {
-  "__version__": "1.0.1"
+  "__version__": "1.0.1",
+  "physics": {
+    "fixedTimeStep": 0.01,
+    "collisionGroups": [
+      {
+        "index": 1,
+        "name": "ground"
+      }
+    ],
+    "collisionMatrix": {
+      "0": 1,
+      "1": 2
+    }
+  }
 }

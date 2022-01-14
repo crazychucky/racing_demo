@@ -2,12 +2,12 @@
   "ver": "1.1.35",
   "importer": "prefab",
   "imported": true,
-  "uuid": "27d9f681-86a4-4a7f-86cf-3c7362788bd0",
+  "uuid": "4fb1ed32-70ba-4309-be5f-0650324ec596",
   "files": [
     ".json"
   ],
   "subMetas": {},
   "userData": {
-    "syncNodeName": "Player"
+    "syncNodeName": "Obstacle"
   }
 }

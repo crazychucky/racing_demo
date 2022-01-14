@@ -14,6 +14,8 @@ const { ccclass, property } = _decorator;
  *
  */
  
+let Z_OFF = -10
+let Y_OFF = 2
 @ccclass('Camera')
 export class Camera extends Component {
     // [1]
@@ -32,6 +34,8 @@ export class Camera extends Component {
 
     update (deltaTime: number) {
       let pos = this.player.getPosition()
+      pos.z = pos.z + Z_OFF
+      pos.y = pos.y + Y_OFF
       this.node.setPosition(pos)
         // console.log(this.player.getPosition())
         // this.player.setPosition
