@@ -1,6 +1,7 @@
 
-import { _decorator, Component, Vec3, Collider, input, Input, ICollisionEvent, EventKeyboard, RigidBody, CCBoolean } from 'cc';
+import { _decorator, Component, Vec3, Collider, input, Input, ICollisionEvent, EventKeyboard, RigidBody, CCBoolean, CCFloat } from 'cc';
 import { KeyCode } from 'cc';
+import { GameController } from './GameController';
 const { ccclass, property } = _decorator;
 
 
@@ -11,7 +12,7 @@ enum DIR {
   RIGHT
 }
 
-let FORCE = 10
+let FORCE = 1
 
 @ccclass('PlayerController')
 export class PlayerController extends Component {
@@ -22,11 +23,17 @@ export class PlayerController extends Component {
   // @property
   // serializableDummy = 0;
 
+  @property({ type: CCFloat })
+  private _lastZ = -45
+
   @property({ type: Array(CCBoolean) })
   private _dirFlags = []
 
   @property({ type: RigidBody })
   private rigidBody = null
+
+  @property({ type: GameController })
+  private gameContoller = null
 
   start() {
     for (let key in DIR) {
@@ -39,8 +46,8 @@ export class PlayerController extends Component {
   private onCollision(event: ICollisionEvent) {
     let oc = event.otherCollider
     let ocName = oc.node.name
-    if(ocName != "Ground"){
-      console.log(oc)
+    if (ocName != "Ground") {
+      this.gameContoller.onFail()
     }
   }
 
@@ -86,6 +93,14 @@ export class PlayerController extends Component {
     }
     else if (this._dirFlags[DIR.RIGHT]) {
       this.rigidBody.applyForce(new Vec3(-FORCE, 0, 0));
+    }
+    let pos = this.node.getPosition()
+    let spd = this._lastZ - pos.z
+    this._lastZ = pos.z
+    spd = spd/deltaTime
+    // console.log(spd/deltaTime)
+    if(spd < 5){
+      this.rigidBody.applyForce(new Vec3(0, 0, FORCE));
     }
   }
 }

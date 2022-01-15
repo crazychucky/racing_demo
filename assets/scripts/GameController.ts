@@ -2,7 +2,8 @@
 import { _decorator, Component, CCBoolean, director } from 'cc';
 const { ccclass, property } = _decorator;
 
-let PASS_SCENE = "ending_scene"
+let PASS_SCENE = "success_scene"
+let FAIL_SCENE = "fail_scene"
 @ccclass('GameController')
 export class GameController extends Component {
     // [1]
@@ -28,6 +29,14 @@ export class GameController extends Component {
         }
         this._inLoad = true
         director.loadScene(PASS_SCENE)
+    }
+
+    onFail () {
+        if(this._inLoad){
+            return
+        }
+        this._inLoad = true
+        director.loadScene(FAIL_SCENE)
     }
 
     // update (deltaTime: number) {

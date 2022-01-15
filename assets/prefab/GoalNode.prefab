@@ -21,13 +21,13 @@
         "__id__": 2
       },
       {
-        "__id__": 11
+        "__id__": 8
       }
     ],
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 16
+      "__id__": 13
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -71,14 +71,11 @@
         "__id__": 3
       },
       {
-        "__id__": 6
-      },
-      {
-        "__id__": 8
+        "__id__": 5
       }
     ],
     "_prefab": {
-      "__id__": 10
+      "__id__": 7
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -95,7 +92,7 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 2,
+      "x": 10,
       "y": 3,
       "z": 2
     },
@@ -109,57 +106,7 @@
     "_id": ""
   },
   {
-    "__type__": "cc.MeshRenderer",
-    "_name": "Cylinder<ModelComponent>",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 2
-    },
-    "_enabled": false,
-    "__prefab": {
-      "__id__": 4
-    },
-    "_materials": [
-      {
-        "__uuid__": "80f614d5-4515-4c87-865b-25280d56b212",
-        "__expectedType__": "cc.Material"
-      }
-    ],
-    "_visFlags": 0,
-    "lightmapSettings": {
-      "__id__": 5
-    },
-    "_mesh": {
-      "__uuid__": "1263d74c-8167-4928-91a6-4e2672411f47@8abdc",
-      "__expectedType__": "cc.Mesh"
-    },
-    "_shadowCastingMode": 0,
-    "_shadowReceivingMode": 1,
-    "_enableMorph": true,
-    "_id": ""
-  },
-  {
-    "__type__": "cc.CompPrefabInfo",
-    "fileId": "24OEzJkyBN042PgmRwFU+i"
-  },
-  {
-    "__type__": "cc.ModelLightmapSettings",
-    "texture": null,
-    "uvParam": {
-      "__type__": "cc.Vec4",
-      "x": 0,
-      "y": 0,
-      "z": 0,
-      "w": 0
-    },
-    "_bakeable": false,
-    "_castShadow": false,
-    "_receiveShadow": false,
-    "_recieveShadow": false,
-    "_lightmapSize": 64
-  },
-  {
-    "__type__": "cc.CylinderCollider",
+    "__type__": "cc.BoxCollider",
     "_name": "",
     "_objFlags": 0,
     "node": {
@@ -167,24 +114,27 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 7
+      "__id__": 4
     },
     "_material": null,
-    "_isTrigger": true,
+    "_isTrigger": false,
     "_center": {
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
       "z": 0
     },
-    "_radius": 0.5,
-    "_height": 2,
-    "_direction": 1,
+    "_size": {
+      "__type__": "cc.Vec3",
+      "x": 1,
+      "y": 1,
+      "z": 1
+    },
     "_id": ""
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "3bKJaOSW9FJbjx8/U/HXcw"
+    "fileId": "44TnJ69SdLIK25lzrdJXdS"
   },
   {
     "__type__": "c6c73jTNAdFEqof9UMhQwmJ",
@@ -195,7 +145,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 9
+      "__id__": 6
     },
     "gameController": null,
     "_id": ""
@@ -225,11 +175,11 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 12
+        "__id__": 9
       }
     ],
     "_prefab": {
-      "__id__": 15
+      "__id__": 12
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -246,7 +196,7 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 2,
+      "x": 10,
       "y": 0.04,
       "z": 2
     },
@@ -264,11 +214,11 @@
     "_name": "Cylinder<ModelComponent>",
     "_objFlags": 0,
     "node": {
-      "__id__": 11
+      "__id__": 8
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 13
+      "__id__": 10
     },
     "_materials": [
       {
@@ -278,10 +228,10 @@
     ],
     "_visFlags": 0,
     "lightmapSettings": {
-      "__id__": 14
+      "__id__": 11
     },
     "_mesh": {
-      "__uuid__": "1263d74c-8167-4928-91a6-4e2672411f47@8abdc",
+      "__uuid__": "1263d74c-8167-4928-91a6-4e2672411f47@a804a",
       "__expectedType__": "cc.Mesh"
     },
     "_shadowCastingMode": 0,
